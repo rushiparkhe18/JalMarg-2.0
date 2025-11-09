@@ -1,0 +1,2660 @@
+{
+  "metadata": {
+    "totalPorts": 330,
+    "countries": 51,
+    "coverage": {
+      "latMin": -38.4,
+      "latMax": 30.58,
+      "lonMin": 22.15,
+      "lonMax": 142.48
+    },
+    "generatedAt": "2025-11-07T20:32:45.362Z",
+    "source": "Indian Ocean Ports Data-updated.csv",
+    "filteredAt": "2025-11-09T12:03:31.327Z",
+    "removedPorts": 46,
+    "reason": "Removed East Asian ports (lon > 105°E) due to Malacca Strait routing complexity",
+    "removedEastAsia": 291
+  },
+  "ports": [
+    {
+      "name": "Yetagun Marine Terminal",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 13.05,
+      "lon": 96.85,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Krabi",
+      "country": "Thailand",
+      "region": "Thailand -- 49760",
+      "lat": 8.066667,
+      "lon": 98.916667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Lhokseumawe",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 5.25,
+      "lon": 97.116667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Mergui",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 12.433333,
+      "lon": 98.6,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Kantang Harbor",
+      "country": "Thailand",
+      "region": "Thailand -- 49760",
+      "lat": 7.4,
+      "lon": 99.516667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Blanglancang",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 5.233333,
+      "lon": 97.1,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Bongkot Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 8.05,
+      "lon": 102.333333,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Uleelheue",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 5.566667,
+      "lon": 95.283333,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Phuket",
+      "country": "Thailand",
+      "region": "Thailand -- 49760",
+      "lat": 7.833333,
+      "lon": 98.4,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Kirteh Oil Terminal",
+      "country": "Malaysia",
+      "region": "Malaysia -- 57400",
+      "lat": 4.566667,
+      "lon": 103.466667,
+      "waterBody": "South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Sabang",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 5.883333,
+      "lon": 95.316667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Bassein",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 16.78333333,
+      "lon": 94.73333333,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Malong Marine Terminal",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 4.633333,
+      "lon": 104.816667,
+      "waterBody": "South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Port Blair",
+      "country": "India",
+      "region": "Andaman Islands -- 49710",
+      "lat": 11.67777778,
+      "lon": 92.73333333,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Rangoon",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 16.766667,
+      "lon": 96.166667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Moulmein Harbor",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 16.483333,
+      "lon": 97.616667,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Victoria Point Harbor",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 9.983333333,
+      "lon": 98.55,
+      "waterBody": "Andaman Sea; Indian Ocean"
+    },
+    {
+      "name": "Mandvi",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.833333,
+      "lon": 69.35,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Phsar Ream",
+      "country": "Cambodia",
+      "region": "Cambodia -- 57478",
+      "lat": 10.5,
+      "lon": 103.6,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Ramba",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -2.616667,
+      "lon": 104.133333,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Hazira",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 21.083333,
+      "lon": 72.633333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Bedi",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.57305556,
+      "lon": 70.04555556,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Petchburi Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.166667,
+      "lon": 100.15,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Muhamamad Bin Qasim",
+      "country": "Pakistan",
+      "region": "Pakistan -- 48580",
+      "lat": 24.766667,
+      "lon": 67.35,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Karachi",
+      "country": "Pakistan",
+      "region": "Pakistan -- 48580",
+      "lat": 24.783333,
+      "lon": 66.983333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Mundra",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.72833333,
+      "lon": 69.70666667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Okha",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.46805556,
+      "lon": 69.07972222,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Veraval",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 20.9,
+      "lon": 70.366667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Vadinar Terminal",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.46666667,
+      "lon": 69.66666667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Sikka",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.433333,
+      "lon": 69.833333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Kandla",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 23.033333,
+      "lon": 70.216667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Porbandar",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 21.633333,
+      "lon": 69.6,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Navlakhi",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 22.95638889,
+      "lon": 70.44758333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Honavar",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 14.28333333,
+      "lon": 74.45,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Port Dabhol",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 17.58333333,
+      "lon": 73.16666667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Jaigarh Bay",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 17.3,
+      "lon": 73.21666667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Jafarabad",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 20.86666667,
+      "lon": 71.38333333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Magdalla",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 21.15,
+      "lon": 72.75,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Jawaharlal Nehru Port (Nhava Shiva)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 18.95,
+      "lon": 72.95,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Bang Saphan",
+      "country": "Thailand",
+      "region": "Thailand -- 49760",
+      "lat": 11.183333,
+      "lon": 99.6,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Kuantan New Port",
+      "country": "Malaysia",
+      "region": "Malaysia -- 57400",
+      "lat": 3.966667,
+      "lon": 103.433333,
+      "waterBody": "South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Benchamas Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 10.516667,
+      "lon": 101.25,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Karwar",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 14.816667,
+      "lon": 74.116667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Pipavav Bandar",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 20.916667,
+      "lon": 71.516667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Bhavnagar",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 21.766667,
+      "lon": 72.233333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Sattahip",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 12.616667,
+      "lon": 100.916667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Songkhla Harbor",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 7.216667,
+      "lon": 100.583333,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Marmagao",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 15.4175,
+      "lon": 73.795,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Mumbai (Bombay)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 18.966667,
+      "lon": 72.866667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Ratnagiri",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 16.983333,
+      "lon": 73.283333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Belekeri",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 14.7,
+      "lon": 74.266667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Dahej",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 21.7,
+      "lon": 72.533333,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Panaji",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 15.5,
+      "lon": 73.816667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Duqm",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 19.67325258,
+      "lon": 57.71690892,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Mina Raysut",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 16.95111111,
+      "lon": 54.02916667,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Nishtun",
+      "country": "Yemen",
+      "region": "Yemen Sanaa -- 48195",
+      "lat": 15.816667,
+      "lon": 52.2,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Gwadar",
+      "country": "Pakistan",
+      "region": "Pakistan -- 48580",
+      "lat": 25.133333,
+      "lon": 62.3,
+      "waterBody": "Arabian Sea; Indian Ocean"
+    },
+    {
+      "name": "Machilipatnam",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 16.15,
+      "lon": 81.166667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Sittwe",
+      "country": "Burma",
+      "region": "Burma (Myanmar) -- 49610",
+      "lat": 20.133333,
+      "lon": 92.9,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Krishnapatnam",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 14.25,
+      "lon": 80.13333333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Batticaloa Roads",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 7.766666667,
+      "lon": 81.68333333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Dhamra",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 20.81666667,
+      "lon": 86.96666667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Gangavaram",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 17.63333333,
+      "lon": 83.25,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Kakinada Bay",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 17,
+      "lon": 82.316667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Karaikal Port",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 10.833333,
+      "lon": 79.866667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Cuddalore",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 11.716667,
+      "lon": 79.766667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Mongla",
+      "country": "Bangladesh",
+      "region": "Bangladesh -- 49570",
+      "lat": 22.466667,
+      "lon": 89.6,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Trincomalee Harbor",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 8.55,
+      "lon": 81.216667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Calcutta",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 22.55,
+      "lon": 88.333333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Chittagong",
+      "country": "Bangladesh",
+      "region": "Bangladesh -- 49570",
+      "lat": 22.316667,
+      "lon": 91.816667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Haldia Port",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 22.016667,
+      "lon": 88.083333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Chennai (Madras)",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 13.1,
+      "lon": 80.3,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Pondicherry",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 11.933333,
+      "lon": 79.833333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Vishakhapatnam",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 17.683333,
+      "lon": 83.3,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Tanjungpinang",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 0.916667,
+      "lon": 104.45,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Paradip",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 20.266667,
+      "lon": 86.683333,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Jabung Batanghari Marine Terminal",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": -0.916667,
+      "lon": 104.066667,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Kamarajar Port",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 13.26138889,
+      "lon": 80.3425,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Palembang",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -2.983333,
+      "lon": 104.766667,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Gopalpur",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 19.30194444,
+      "lon": 84.96666667,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Nagappattinam",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 10.766667,
+      "lon": 79.85,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Kattupalli Port",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 13.30694444,
+      "lon": 80.35222222,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Baleshwar",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 21.48333333,
+      "lon": 86.95,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Machilipatnam",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 16.15,
+      "lon": 81.15,
+      "waterBody": "Bay of Bengal; Indian Ocean"
+    },
+    {
+      "name": "Berbera",
+      "country": "Somalia",
+      "region": "Somalia -- 47810",
+      "lat": 10.45,
+      "lon": 45.016667,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Boosaaso",
+      "country": "Somalia",
+      "region": "Somalia -- 47810",
+      "lat": 11.283333,
+      "lon": 49.183333,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Aden",
+      "country": "Yemen",
+      "region": "Yemen Aden -- 48143",
+      "lat": 12.783333,
+      "lon": 44.95,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Rudum Terminal",
+      "country": "Yemen",
+      "region": "Yemen Sanaa -- 48195",
+      "lat": 13.983333,
+      "lon": 47.916667,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Djibouti",
+      "country": "Djibouti",
+      "region": "Djibouti -- 47840",
+      "lat": 11.6,
+      "lon": 43.133333,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Al Mukalla",
+      "country": "Yemen",
+      "region": "Yemen Sanaa -- 48195",
+      "lat": 14.516667,
+      "lon": 49.116667,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Kampong Saom",
+      "country": "Cambodia",
+      "region": "Cambodia -- 57478",
+      "lat": 10.633333,
+      "lon": 103.5,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Balhaf",
+      "country": "Yemen",
+      "region": "Yemen Sanaa -- 48195",
+      "lat": 13.966667,
+      "lon": 48.183333,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Ash Shihr Oil Terminal",
+      "country": "Yemen",
+      "region": "Yemen Sanaa -- 48195",
+      "lat": 14.7,
+      "lon": 49.48333333,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Doraleh",
+      "country": "Djibouti",
+      "region": "Djibouti -- 47840",
+      "lat": 11.6,
+      "lon": 43.083333,
+      "waterBody": "Gulf of Aden; Indian Ocean"
+    },
+    {
+      "name": "Elat",
+      "country": "Israel",
+      "region": "Israel -- 48075",
+      "lat": 29.55,
+      "lon": 34.95,
+      "waterBody": "Gulf of Aqaba; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Nuwaybi'",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.966667,
+      "lon": 34.65,
+      "waterBody": "Gulf of Aqaba; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Al Aqabah",
+      "country": "Jordan",
+      "region": "Jordan -- 48080",
+      "lat": 29.516667,
+      "lon": 35,
+      "waterBody": "Gulf of Aqaba; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Jask",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 25.633333,
+      "lon": 57.766667,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Khawr Fakkan",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.36277778,
+      "lon": 56.36888889,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Mina Qabus",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 23.633333,
+      "lon": 58.583333,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Mina Al Fahl",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 23.633333,
+      "lon": 58.516667,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Qalhat Lng Terminal",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 22.683333,
+      "lon": 59.4,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Port Of Sohar",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 24.516667,
+      "lon": 56.633333,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Al Fujayrah",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.17305556,
+      "lon": 56.36916667,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Chah Bahar",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 25.266667,
+      "lon": 60.616667,
+      "waterBody": "Gulf of Oman; Indian Ocean"
+    },
+    {
+      "name": "Zafarana Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.166667,
+      "lon": 32.683333,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Zeit Bay Lpg Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 27.8,
+      "lon": 33.566667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Erawan Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 9.1,
+      "lon": 101.35,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Khanom",
+      "country": "Thailand",
+      "region": "Thailand -- 49760",
+      "lat": 9.2,
+      "lon": 99.9,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Pattani",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 6.95,
+      "lon": 101.3,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Siam Seaport",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.133333,
+      "lon": 100.883333,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Ko Si Chang Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.166667,
+      "lon": 100.816667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "El Ghardaqa",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 27.216667,
+      "lon": 33.85,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Gharib",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.35,
+      "lon": 33.1,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Shukhier",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.133333,
+      "lon": 33.283333,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Badran Oil Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.95,
+      "lon": 33.166667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Wadi Feiran",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.75,
+      "lon": 33.2,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Sudr",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.583333,
+      "lon": 32.7,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "As Suways",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.966667,
+      "lon": 32.55,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Zeit Bay Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 27.833333,
+      "lon": 33.6,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Abu Zanimah",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.033333,
+      "lon": 33.116667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Sokhna Port Gas Tanker Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.683333,
+      "lon": 32.366667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "At Tur",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 28.233333,
+      "lon": 33.616667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Marsa az Zaytiyah",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 27.85,
+      "lon": 33.6,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "North Ain Sukhna Port",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.65,
+      "lon": 32.366667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "El-Adabiya",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.866667,
+      "lon": 32.466667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ain Sukhna Terminal",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 29.583333,
+      "lon": 32.366667,
+      "waterBody": "Gulf of Suez; Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Iharana",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -13.35,
+      "lon": 50,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Bangkok",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.75,
+      "lon": 100.5,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Chake Chake",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -5.25,
+      "lon": 39.766667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Mjimwema Terminal",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -6.816667,
+      "lon": 39.366667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Port Est",
+      "country": "Reunion",
+      "region": "Reunion -- 47670",
+      "lat": -20.933333,
+      "lon": 55.316667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Port Ouest",
+      "country": "Reunion",
+      "region": "Reunion -- 47670",
+      "lat": -20.933333,
+      "lon": 55.283333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Antsiranana",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -12.266667,
+      "lon": 49.283333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Dabo",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -0.5,
+      "lon": 104.566667,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Mananjary",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -21.25,
+      "lon": 48.333333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Kemaman Harbor",
+      "country": "Malaysia",
+      "region": "Malaysia -- 57400",
+      "lat": 4.25,
+      "lon": 103.466667,
+      "waterBody": "South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Kuala Trengganu",
+      "country": "Malaysia",
+      "region": "Malaysia -- 57400",
+      "lat": 5.35,
+      "lon": 103.133333,
+      "waterBody": "South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Kismaayo",
+      "country": "Somalia",
+      "region": "Somalia -- 47120",
+      "lat": -0.366667,
+      "lon": 42.55,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Mombasa",
+      "country": "Kenya",
+      "region": "Kenya -- 47090",
+      "lat": -4.066667,
+      "lon": 39.666667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Maroantsetra",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -15.45,
+      "lon": 49.816667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Toamasina",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -18.166667,
+      "lon": 49.416667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Teluk Bayur",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -1,
+      "lon": 100.366667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Kilifi",
+      "country": "Kenya",
+      "region": "Kenya -- 47090",
+      "lat": -3.633333,
+      "lon": 39.866667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Malindi",
+      "country": "Kenya",
+      "region": "Kenya -- 47090",
+      "lat": -3.216667,
+      "lon": 40.133333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Lamu",
+      "country": "Kenya",
+      "region": "Kenya -- 47090",
+      "lat": -2.266667,
+      "lon": 40.9,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Manakara",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -22.116667,
+      "lon": 48.05,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Laem Chabang",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.083333,
+      "lon": 100.883333,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Port Mathurin",
+      "country": "Mauritius",
+      "region": "Rodrigues -- 47740",
+      "lat": -19.683333,
+      "lon": 63.416667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Kilwa Kivinje",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -8.733333,
+      "lon": 39.416667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Dar Es Salaam",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -6.816667,
+      "lon": 39.3,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Mtwara",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -10.266667,
+      "lon": 40.2,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Maputo",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -25.96277778,
+      "lon": 32.54472222,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Durban",
+      "country": "South Africa",
+      "region": "South Africa -- 46725",
+      "lat": -29.866667,
+      "lon": 31.066667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "East London",
+      "country": "South Africa",
+      "region": "South Africa -- 46725",
+      "lat": -33.033333,
+      "lon": 27.916667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Mikindani",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -10.266667,
+      "lon": 40.133333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Baraawe",
+      "country": "Somalia",
+      "region": "Somalia -- 47120",
+      "lat": 1.1,
+      "lon": 44.05,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Bengkulu",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -3.783333,
+      "lon": 102.25,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Kijang",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 0.85,
+      "lon": 104.6,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Richards Bay",
+      "country": "South Africa",
+      "region": "South Africa -- 46725",
+      "lat": -28.81,
+      "lon": 32.09833333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Moutsamoudu",
+      "country": "Comoros",
+      "region": "Comoros -- 47295",
+      "lat": -12.15,
+      "lon": 44.4,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Muqdisho",
+      "country": "Somalia",
+      "region": "Somalia -- 47120",
+      "lat": 2.033333,
+      "lon": 45.35,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Marka",
+      "country": "Somalia",
+      "region": "Somalia -- 47120",
+      "lat": 1.716667,
+      "lon": 44.783333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Saint-Pierre",
+      "country": "Reunion",
+      "region": "Reunion -- 47670",
+      "lat": -21.35,
+      "lon": 55.466667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Saint-Denis",
+      "country": "Reunion",
+      "region": "Reunion -- 47670",
+      "lat": -20.866667,
+      "lon": 55.45,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Victoria",
+      "country": "Seychelles",
+      "region": "Seychelles -- 47210",
+      "lat": -4.616667,
+      "lon": 55.45,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Sungaigerong",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -2.983333,
+      "lon": 104.833333,
+      "waterBody": "Natuna Sea; South China Sea; South Pacific Ocean"
+    },
+    {
+      "name": "Diego Garcia",
+      "country": "British Indian Ocean Territory",
+      "region": "Chagos Archipelago -- 47760",
+      "lat": -7.35,
+      "lon": 72.466667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Port Elizabeth",
+      "country": "South Africa",
+      "region": "South Africa -- 46725",
+      "lat": -33.95194444,
+      "lon": 25.6425,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Map Ta Phut",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 12.666667,
+      "lon": 101.166667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Zanzibar",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -6.166667,
+      "lon": 39.183333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Tolanaro",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -25.033333,
+      "lon": 47,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Tanga",
+      "country": "Tanzania",
+      "region": "Tanzania -- 46965",
+      "lat": -5.083333,
+      "lon": 39.116667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Tantawan Marine Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 10.083333,
+      "lon": 101.416667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Si Racha Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.116667,
+      "lon": 100.883333,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Rayong Tpi Terminal",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 12.633333,
+      "lon": 101.3,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Sibolga",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 1.733333,
+      "lon": 98.766667,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Duong Dong",
+      "country": "Vietnam",
+      "region": "Vietnam -- 57510",
+      "lat": 10.216667,
+      "lon": 103.966667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Pulau Baai",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": -3.916667,
+      "lon": 102.283333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Hambantota",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 6.116666667,
+      "lon": 81.13333333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Galle Harbor",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 6.033055556,
+      "lon": 80.22833333,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "Port Louis",
+      "country": "Mauritius",
+      "region": "Mauritius -- 47710",
+      "lat": -20.15,
+      "lon": 57.5,
+      "waterBody": "Indian Ocean"
+    },
+    {
+      "name": "New Mangalore",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 12.916667,
+      "lon": 74.816667,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Kochi (Cochin)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 9.966667,
+      "lon": 76.233333,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Male",
+      "country": "Maldives",
+      "region": "Maldive Islands -- 49190",
+      "lat": 4.166667,
+      "lon": 73.5,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Colombo",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 6.95,
+      "lon": 79.85,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Beypore",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 11.166667,
+      "lon": 75.8,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Quilon (Kollam)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 8.871944444,
+      "lon": 76.58388889,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Azhikal (Azhikkal)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 11.94555556,
+      "lon": 75.30944444,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Trivandrum",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 8.483333,
+      "lon": 76.95,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Kolachel",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 8.166667,
+      "lon": 77.25,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Calicut (Kozhikode)",
+      "country": "India",
+      "region": "India West Coast -- 48610",
+      "lat": 11.25,
+      "lon": 75.766667,
+      "waterBody": "Laccadive Sea; Indian Ocean"
+    },
+    {
+      "name": "Andoany",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -13.4,
+      "lon": 48.3,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Antsohim Bondrona",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -13.083333,
+      "lon": 48.833333,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Chinde",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -18.566667,
+      "lon": 36.5,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Maintirano",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -18.066667,
+      "lon": 44.016667,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Pebane",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -17.266667,
+      "lon": 38.15,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Nacala",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -14.533333,
+      "lon": 40.666667,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Mocambique",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -15.033333,
+      "lon": 40.733333,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Inhambane",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -23.916667,
+      "lon": 35.4,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Morondava",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -20.283333,
+      "lon": 44.3,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Porto Belo",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -17.7,
+      "lon": 37.183333,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Quelimane",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -17.883333,
+      "lon": 36.883333,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Beira",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -19.833333,
+      "lon": 34.833333,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Moroni",
+      "country": "Comoros",
+      "region": "Comoros -- 47295",
+      "lat": -11.7,
+      "lon": 43.25,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Ibo",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -12.333333,
+      "lon": 40.616667,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Mahajanga",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -15.716667,
+      "lon": 46.3,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Fomboni",
+      "country": "Comoros",
+      "region": "Comoros -- 47295",
+      "lat": -12.266667,
+      "lon": 43.75,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Dzaoudzi",
+      "country": "Comoros",
+      "region": "Comoros -- 47295",
+      "lat": -12.783333,
+      "lon": 45.25,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Toliara",
+      "country": "Madagascar",
+      "region": "Madagascar -- 47350",
+      "lat": -23.366667,
+      "lon": 43.666667,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Pemba",
+      "country": "Mozambique",
+      "region": "Mozambique -- 46860",
+      "lat": -12.966667,
+      "lon": 40.5,
+      "waterBody": "Mozambique Channel; Indian Ocean"
+    },
+    {
+      "name": "Tuticorin",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 8.8,
+      "lon": 78.166667,
+      "waterBody": "Palk Strait; Indian Ocean"
+    },
+    {
+      "name": "Kankesanturai",
+      "country": "Sri Lanka",
+      "region": "Sri Lanka -- 49210",
+      "lat": 9.816667,
+      "lon": 80.05,
+      "waterBody": "Palk Strait; Indian Ocean"
+    },
+    {
+      "name": "Pamban",
+      "country": "India",
+      "region": "India East Coast -- 49310",
+      "lat": 9.283333333,
+      "lon": 79.21666667,
+      "waterBody": "Palk Strait; Indian Ocean"
+    },
+    {
+      "name": "Barkan Oil-loading Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 29.733333,
+      "lon": 50.166667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Sharjah Offshore Terminal",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.583333,
+      "lon": 55.4,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Si Racha",
+      "country": "Thailand",
+      "region": "Thailand -- 57431",
+      "lat": 13.166667,
+      "lon": 100.916667,
+      "waterBody": "Gulf of Thailand; South China Sea; North Pacific Ocean"
+    },
+    {
+      "name": "Ras Al Ghar",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 26.9,
+      "lon": 49.866667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Kharg Island Oil Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 29.233333,
+      "lon": 50.333333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Bandar-E Mahshahr",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 30.466667,
+      "lon": 49.183333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Bushehr",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 28.983333,
+      "lon": 50.833333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Jabal Ali",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.016667,
+      "lon": 55.05,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Dubayy",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.266667,
+      "lon": 55.3,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khorramshahr",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 30.433333,
+      "lon": 48.183333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Umm Qasr",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 30.016667,
+      "lon": 47.95,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Bandar Khomeyni",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 30.433333,
+      "lon": 49.083333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Ash Shuaybah",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 29.033333,
+      "lon": 48.166667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Kuwayt",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 29.35,
+      "lon": 47.933333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Jubayl",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 27.083333,
+      "lon": 49.666667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Az Zawr",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 28.733333,
+      "lon": 48.4,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ras Laffan",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 25.916667,
+      "lon": 51.583333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ras Al Mishab",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 28.116667,
+      "lon": 48.633333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ras Al Khafji",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 28.433333,
+      "lon": 48.583333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ras  Tannurah",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 26.633333,
+      "lon": 50.166667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Salman",
+      "country": "Bahrain",
+      "region": "Bahrain -- 48305",
+      "lat": 26.2,
+      "lon": 50.633333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al-Basra Oil Terminal",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 29.683333,
+      "lon": 48.816667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Jazirat Das",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.15,
+      "lon": 52.866667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Rayyan Terminal",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 26.65,
+      "lon": 51.55,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Doha",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 25.283333,
+      "lon": 51.533333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Fateh Oil Terminal",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.583333,
+      "lon": 54.416667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khalifa Bin Salman",
+      "country": "Bahrain",
+      "region": "Bahrain -- 48305",
+      "lat": 26.25,
+      "lon": 50.75,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Basrah",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 30.516667,
+      "lon": 47.833333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khawr Al Zubair",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 30.183333,
+      "lon": 47.9,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Abadan",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 30.333333,
+      "lon": 48.283333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khosrowabad",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 30.166667,
+      "lon": 48.416667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Shaheen Terminal",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 26.583333,
+      "lon": 52,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Abu Zaby",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 24.5,
+      "lon": 54.333333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ajman",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.416667,
+      "lon": 55.433333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khawr Al Amaya",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 29.783333,
+      "lon": 48.8,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Abd Allah",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 29.016667,
+      "lon": 48.166667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Al Ahmadi",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 29.066667,
+      "lon": 48.166667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Khawr Al Zubair Lng Terminal",
+      "country": "Iraq",
+      "region": "Iraq -- 48375",
+      "lat": 30.133333,
+      "lon": 47.916667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Jazireh-Ye Sirri",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 25.9,
+      "lon": 54.55,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Sirus Oil Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 29.016667,
+      "lon": 49.483333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Jazirat Halul",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 25.683333,
+      "lon": 52.416667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Jabal Az Zannah/ruways",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 24.2,
+      "lon": 52.7,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Hamriyah Lpg Terminal",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.466667,
+      "lon": 55.483333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ash Shariqah",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.416667,
+      "lon": 55.366667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Dammam",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 26.5,
+      "lon": 50.2,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ju Aymah Oil Terminal",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 26.933333,
+      "lon": 50.033333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Manamah",
+      "country": "Bahrain",
+      "region": "Bahrain -- 48305",
+      "lat": 26.233333,
+      "lon": 50.583333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Ju Aymah Lpg Terminal",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia Continued -- 48330",
+      "lat": 26.866667,
+      "lon": 50.05,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Doha Harbor",
+      "country": "Kuwait",
+      "region": "Kuwait -- 48350",
+      "lat": 29.383333,
+      "lon": 47.8,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Al Jazeera Port",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.716667,
+      "lon": 55.783333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Umm Al Qaywayn",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.583333,
+      "lon": 55.583333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Zirkuh Oil Field",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 24.866667,
+      "lon": 53.05,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Sitrah",
+      "country": "Bahrain",
+      "region": "Bahrain -- 48305",
+      "lat": 26.166667,
+      "lon": 50.666667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Umm An Nar",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 24.45,
+      "lon": 54.483333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Umm Said",
+      "country": "Qatar",
+      "region": "Qatar -- 48285",
+      "lat": 24.916667,
+      "lon": 51.566667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Zirkuh",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.016667,
+      "lon": 53,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mubarraz Oil Terminal",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 24.433333,
+      "lon": 53.516667,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Hulaylah Oil Terminal",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.983333,
+      "lon": 55.933333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Bandar Taheri Offshore Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 27.65,
+      "lon": 52.35,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Bandar-E Pars Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 27.533333,
+      "lon": 52.533333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Mina Saqr",
+      "country": "United Arab Emirates",
+      "region": "United Arab Emirates -- 48260",
+      "lat": 25.983333,
+      "lon": 56.05,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Jazireh-Ye Lavan Oil Terminal",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 26.783333,
+      "lon": 53.333333,
+      "waterBody": "Persian Gulf; Indian Ocean"
+    },
+    {
+      "name": "Sharmah",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 27.933333,
+      "lon": 35.25,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Al Khair Oil Terminal",
+      "country": "Sudan",
+      "region": "Sudan -- 47910",
+      "lat": 19.583333,
+      "lon": 37.25,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Sharm El Sheikh",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 27.85,
+      "lon": 34.283333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Al Qusayr",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 26.1,
+      "lon": 34.283333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Duba Bulk Plant Tanker Terminal",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 27.316667,
+      "lon": 35.9,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Hamrawein",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 26.25,
+      "lon": 34.2,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Beshayer Oil Terminal",
+      "country": "Sudan",
+      "region": "Sudan -- 47910",
+      "lat": 19.4,
+      "lon": 37.316667,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Salif",
+      "country": "Yemen",
+      "region": "Yemen Aden -- 48143",
+      "lat": 15.3,
+      "lon": 42.666667,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Al Mukha",
+      "country": "Yemen",
+      "region": "Yemen Aden -- 48143",
+      "lat": 13.316667,
+      "lon": 43.25,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Ras Isa Marine Terminal",
+      "country": "Yemen",
+      "region": "Yemen Aden -- 48143",
+      "lat": 15.133333,
+      "lon": 42.6,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Sawakin Harbor",
+      "country": "Sudan",
+      "region": "Sudan -- 47910",
+      "lat": 19.133333,
+      "lon": 37.35,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Mitsiwa Harbor",
+      "country": "Eritrea",
+      "region": "Eritrea -- 47870",
+      "lat": 15.616667,
+      "lon": 39.466667,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Assab",
+      "country": "Eritrea",
+      "region": "Eritrea -- 47870",
+      "lat": 13,
+      "lon": 42.75,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Safaja",
+      "country": "Egypt",
+      "region": "Egypt Red Sea -- 47950",
+      "lat": 26.733333,
+      "lon": 33.95,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Port Sudan",
+      "country": "Sudan",
+      "region": "Sudan -- 47910",
+      "lat": 19.6,
+      "lon": 37.233333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Duba",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 27.566667,
+      "lon": 35.533333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "King Fahd Port",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 23.95,
+      "lon": 38.216667,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Jiddah",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 21.483333,
+      "lon": 39.183333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Jizan",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 16.9,
+      "lon": 42.483333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Yanbu",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 24.083333,
+      "lon": 38.05,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Rabigh",
+      "country": "Saudi Arabia",
+      "region": "Saudi Arabia -- 48100",
+      "lat": 22.733333,
+      "lon": 38.983333,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Al Ahmadi",
+      "country": "Yemen",
+      "region": "Yemen Aden -- 48143",
+      "lat": 14.833333,
+      "lon": 42.966667,
+      "waterBody": "Red Sea; Indian Ocean"
+    },
+    {
+      "name": "Jazireh-Ye Hormoz",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 27.1,
+      "lon": 56.45,
+      "waterBody": "Strait of Hormuz; Indian Ocean"
+    },
+    {
+      "name": "Khawr Khasab",
+      "country": "Oman",
+      "region": "Oman -- 48225",
+      "lat": 26.216667,
+      "lon": 56.233333,
+      "waterBody": "Strait of Hormuz; Indian Ocean"
+    },
+    {
+      "name": "Bandar Abbas",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 27.15,
+      "lon": 56.2,
+      "waterBody": "Strait of Hormuz; Indian Ocean"
+    },
+    {
+      "name": "Bandar-E Shahid Reajie",
+      "country": "Iran",
+      "region": "Iran -- 48410",
+      "lat": 27.1,
+      "lon": 56.066667,
+      "waterBody": "Strait of Hormuz; Indian Ocean"
+    },
+    {
+      "name": "Pulau Bukom",
+      "country": "Singapore",
+      "region": "Singapore -- 49990",
+      "lat": 1.233333,
+      "lon": 103.766667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Dumai",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 1.683333,
+      "lon": 101.45,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pulau Sambu",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 1.166667,
+      "lon": 103.9,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Lalang Marine Terminal",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 1.183333,
+      "lon": 102.216667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pangkalansusu",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 4.116667,
+      "lon": 98.216667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Muar",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 2.05,
+      "lon": 102.566667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Port Langkawi",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 6.433333,
+      "lon": 99.766667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Keppel - (East Singapore)",
+      "country": "Singapore",
+      "region": "Singapore -- 49990",
+      "lat": 1.283333,
+      "lon": 103.85,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Jurong Island",
+      "country": "Singapore",
+      "region": "Singapore -- 49990",
+      "lat": 1.283333,
+      "lon": 103.733333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Belawan",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 3.783333,
+      "lon": 98.683333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Johor",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 1.433333,
+      "lon": 103.9,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Lumut",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 4.233333,
+      "lon": 100.633333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Melaka",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 2.2,
+      "lon": 102.25,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Bengkalis",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 1.466667,
+      "lon": 102.1,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Kuala Tanjung",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 3.366667,
+      "lon": 99.483333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Sungaipakning",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 1.35,
+      "lon": 102.166667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Tanjunguban",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 1.066667,
+      "lon": 104.216667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pulau Pinang",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 5.416667,
+      "lon": 100.35,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Port Klang",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 3,
+      "lon": 101.4,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pulau Sebarok",
+      "country": "Singapore",
+      "region": "Singapore -- 49990",
+      "lat": 1.2,
+      "lon": 103.8,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Tanjung Pelepas",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 1.35,
+      "lon": 103.55,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Serangoon Harbor",
+      "country": "Singapore",
+      "region": "Singapore -- 49990",
+      "lat": 1.4,
+      "lon": 103.95,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Teluk Anson",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 4.016667,
+      "lon": 101.016667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Tanjung Balai Karimun",
+      "country": "Indonesia",
+      "region": "Sumatera -- 50515",
+      "lat": 0.983333,
+      "lon": 103.433333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pelabuhan Sungai Udang",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 2.25,
+      "lon": 102.133333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Pelabuhan Bass",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 6.316667,
+      "lon": 99.833333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Sekupang",
+      "country": "Indonesia",
+      "region": "Indonesia -- 50020",
+      "lat": 1.133333,
+      "lon": 103.916667,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    },
+    {
+      "name": "Port Dickson",
+      "country": "Malaysia",
+      "region": "Malaysia -- 49820",
+      "lat": 2.533333,
+      "lon": 101.783333,
+      "waterBody": "Strait of Malacca; Indian Ocean"
+    }
+  ]
+}
