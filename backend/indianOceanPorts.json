@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalPorts": 330,
+    "totalPorts": 326,
     "countries": 51,
     "coverage": {
       "latMin": -38.4,
@@ -545,43 +545,11 @@
       "waterBody": "Bay of Bengal; Indian Ocean"
     },
     {
-      "name": "Mongla",
-      "country": "Bangladesh",
-      "region": "Bangladesh -- 49570",
-      "lat": 22.466667,
-      "lon": 89.6,
-      "waterBody": "Bay of Bengal; Indian Ocean"
-    },
-    {
       "name": "Trincomalee Harbor",
       "country": "Sri Lanka",
       "region": "Sri Lanka -- 49210",
       "lat": 8.55,
       "lon": 81.216667,
-      "waterBody": "Bay of Bengal; Indian Ocean"
-    },
-    {
-      "name": "Calcutta",
-      "country": "India",
-      "region": "India East Coast -- 49310",
-      "lat": 22.55,
-      "lon": 88.333333,
-      "waterBody": "Bay of Bengal; Indian Ocean"
-    },
-    {
-      "name": "Chittagong",
-      "country": "Bangladesh",
-      "region": "Bangladesh -- 49570",
-      "lat": 22.316667,
-      "lon": 91.816667,
-      "waterBody": "Bay of Bengal; Indian Ocean"
-    },
-    {
-      "name": "Haldia Port",
-      "country": "India",
-      "region": "India East Coast -- 49310",
-      "lat": 22.016667,
-      "lon": 88.083333,
       "waterBody": "Bay of Bengal; Indian Ocean"
     },
     {

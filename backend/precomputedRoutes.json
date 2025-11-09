@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-10",
+    "description": "Precomputed strategic hub routes for fast retrieval",
+    "resolution": 0.2,
+    "note": "These are common hub-to-hub routes used for multi-segment routing"
+  },
+  "routes": {
+    "MUMBAI_CHENNAI_OPTIMAL": {
+      "from": { "name": "Mumbai", "lat": 18.97, "lon": 72.87 },
+      "to": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "mode": "optimal",
+      "distance": 1289.5,
+      "duration": 34.8,
+      "waypoints": 11,
+      "path": [
+        { "lat": 18.97, "lon": 72.87 },
+        { "lat": 18.5, "lon": 73.0 },
+        { "lat": 17.5, "lon": 73.5 },
+        { "lat": 16.0, "lon": 74.0 },
+        { "lat": 14.5, "lon": 74.5 },
+        { "lat": 12.5, "lon": 75.0 },
+        { "lat": 11.0, "lon": 75.5 },
+        { "lat": 10.0, "lon": 76.5 },
+        { "lat": 9.5, "lon": 78.0 },
+        { "lat": 10.5, "lon": 79.5 },
+        { "lat": 13.08, "lon": 80.27 }
+      ],
+      "precomputed": true
+    },
+    "MUMBAI_CHENNAI_FUEL": {
+      "from": { "name": "Mumbai", "lat": 18.97, "lon": 72.87 },
+      "to": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "mode": "fuel",
+      "distance": 1265.2,
+      "duration": 34.1,
+      "waypoints": 9,
+      "path": [
+        { "lat": 18.97, "lon": 72.87 },
+        { "lat": 18.2, "lon": 73.2 },
+        { "lat": 16.5, "lon": 74.2 },
+        { "lat": 14.5, "lon": 75.0 },
+        { "lat": 12.0, "lon": 76.0 },
+        { "lat": 10.5, "lon": 77.5 },
+        { "lat": 11.0, "lon": 79.0 },
+        { "lat": 12.0, "lon": 79.8 },
+        { "lat": 13.08, "lon": 80.27 }
+      ],
+      "precomputed": true
+    },
+    "MUMBAI_CHENNAI_SAFE": {
+      "from": { "name": "Mumbai", "lat": 18.97, "lon": 72.87 },
+      "to": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "mode": "safe",
+      "distance": 1320.8,
+      "duration": 35.6,
+      "waypoints": 13,
+      "path": [
+        { "lat": 18.97, "lon": 72.87 },
+        { "lat": 18.7, "lon": 72.7 },
+        { "lat": 18.0, "lon": 73.3 },
+        { "lat": 17.0, "lon": 73.8 },
+        { "lat": 15.5, "lon": 74.3 },
+        { "lat": 14.0, "lon": 74.8 },
+        { "lat": 12.5, "lon": 75.3 },
+        { "lat": 11.0, "lon": 75.8 },
+        { "lat": 10.0, "lon": 76.8 },
+        { "lat": 9.5, "lon": 78.3 },
+        { "lat": 10.0, "lon": 79.8 },
+        { "lat": 11.5, "lon": 80.0 },
+        { "lat": 13.08, "lon": 80.27 }
+      ],
+      "precomputed": true
+    },
+    "CHENNAI_VISAKHAPATNAM_OPTIMAL": {
+      "from": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "to": { "name": "Visakhapatnam", "lat": 17.68, "lon": 83.30 },
+      "mode": "optimal",
+      "distance": 612.3,
+      "duration": 16.5,
+      "waypoints": 7,
+      "path": [
+        { "lat": 13.08, "lon": 80.27 },
+        { "lat": 13.5, "lon": 80.5 },
+        { "lat": 14.5, "lon": 80.8 },
+        { "lat": 15.5, "lon": 81.5 },
+        { "lat": 16.5, "lon": 82.0 },
+        { "lat": 17.0, "lon": 82.8 },
+        { "lat": 17.68, "lon": 83.30 }
+      ],
+      "precomputed": true
+    },
+    "CHENNAI_VISAKHAPATNAM_FUEL": {
+      "from": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "to": { "name": "Visakhapatnam", "lat": 17.68, "lon": 83.30 },
+      "mode": "fuel",
+      "distance": 598.5,
+      "duration": 16.1,
+      "waypoints": 6,
+      "path": [
+        { "lat": 13.08, "lon": 80.27 },
+        { "lat": 14.0, "lon": 80.7 },
+        { "lat": 15.0, "lon": 81.5 },
+        { "lat": 16.0, "lon": 82.2 },
+        { "lat": 17.0, "lon": 82.9 },
+        { "lat": 17.68, "lon": 83.30 }
+      ],
+      "precomputed": true
+    },
+    "CHENNAI_VISAKHAPATNAM_SAFE": {
+      "from": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "to": { "name": "Visakhapatnam", "lat": 17.68, "lon": 83.30 },
+      "mode": "safe",
+      "distance": 635.7,
+      "duration": 17.1,
+      "waypoints": 8,
+      "path": [
+        { "lat": 13.08, "lon": 80.27 },
+        { "lat": 13.3, "lon": 80.4 },
+        { "lat": 14.0, "lon": 80.7 },
+        { "lat": 14.8, "lon": 81.0 },
+        { "lat": 15.7, "lon": 81.6 },
+        { "lat": 16.5, "lon": 82.2 },
+        { "lat": 17.2, "lon": 82.9 },
+        { "lat": 17.68, "lon": 83.30 }
+      ],
+      "precomputed": true
+    },
+    "CHENNAI_BANGLADESH_OPTIMAL": {
+      "from": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "to": { "name": "Bangladesh (Offshore)", "lat": 22.0, "lon": 89.8 },
+      "mode": "optimal",
+      "distance": 1456.8,
+      "duration": 39.3,
+      "waypoints": 10,
+      "path": [
+        { "lat": 13.08, "lon": 80.27 },
+        { "lat": 14.5, "lon": 81.5 },
+        { "lat": 16.0, "lon": 83.0 },
+        { "lat": 17.5, "lon": 84.5 },
+        { "lat": 18.5, "lon": 85.5 },
+        { "lat": 19.5, "lon": 86.5 },
+        { "lat": 20.5, "lon": 87.5 },
+        { "lat": 21.0, "lon": 88.5 },
+        { "lat": 21.5, "lon": 89.2 },
+        { "lat": 22.0, "lon": 89.8 }
+      ],
+      "precomputed": true
+    },
+    "CHENNAI_SINGAPORE_OPTIMAL": {
+      "from": { "name": "Chennai", "lat": 13.08, "lon": 80.27 },
+      "to": { "name": "Singapore", "lat": 1.28, "lon": 103.85 },
+      "mode": "optimal",
+      "distance": 2890.5,
+      "duration": 78.0,
+      "waypoints": 15,
+      "path": [
+        { "lat": 13.08, "lon": 80.27 },
+        { "lat": 11.0, "lon": 82.0 },
+        { "lat": 9.0, "lon": 85.0 },
+        { "lat": 7.5, "lon": 88.0 },
+        { "lat": 7.0, "lon": 92.0 },
+        { "lat": 6.5, "lon": 95.0 },
+        { "lat": 6.0, "lon": 97.0 },
+        { "lat": 5.5, "lon": 98.5 },
+        { "lat": 5.0, "lon": 99.5 },
+        { "lat": 4.0, "lon": 100.5 },
+        { "lat": 3.0, "lon": 101.5 },
+        { "lat": 2.5, "lon": 102.5 },
+        { "lat": 2.0, "lon": 103.0 },
+        { "lat": 1.5, "lon": 103.5 },
+        { "lat": 1.28, "lon": 103.85 }
+      ],
+      "precomputed": true
+    }
+  }
+}
