@@ -9,11 +9,11 @@ dotenv.config({ path: path.join(__dirname, '.env') });
 
 const app = express();
 
-// Increase server timeout for long route calculations (15 minutes)
+// Increase server timeout for long route calculations (25 minutes)
 const server = require('http').createServer(app);
-server.timeout = 900000; // 15 minutes
-server.keepAliveTimeout = 900000;
-server.headersTimeout = 905000;
+server.timeout = 1500000; // 25 minutes
+server.keepAliveTimeout = 1500000;
+server.headersTimeout = 1505000;
 
 // Middleware
 app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
@@ -63,5 +63,5 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  console.log(`⏱️ Request timeout: 15 minutes (for complex route calculations)`);
+  console.log(`⏱️ Request timeout: 25 minutes (for complex route calculations)`);
 });

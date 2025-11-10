@@ -40,6 +40,15 @@ const GridSchema = new mongoose.Schema({
       type: Boolean,
       default: false,
     },
+    zone: {
+      type: String,
+      enum: ['open_water', 'coastal', 'port'],
+      default: undefined,
+    },
+    open_water: {
+      type: Boolean,
+      default: undefined,
+    },
     weather: {
       temperature: Number,
       windSpeed: Number,

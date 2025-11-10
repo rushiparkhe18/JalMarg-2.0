@@ -78,10 +78,10 @@ class HierarchicalRouter {
     console.log(`\n   🗺️  STAGE 1: Coarse waypoint planning (1° resolution)`);
     
     // First, try to use predefined strategic waypoints
-    let predefinedWaypoints = coastalOptimizer.getStrategicWaypoints(start, end);
+    let predefinedWaypoints = coastalOptimizer.getStrategicWaypoints(start, end, mode);
     
     if (predefinedWaypoints && predefinedWaypoints.length > 2) {
-      console.log(`   ✅ Using ${predefinedWaypoints.length} predefined strategic waypoints`);
+      console.log(`   ✅ Using ${predefinedWaypoints.length} predefined strategic waypoints for ${mode.toUpperCase()} mode`);
       
       // Adjust waypoints based on mode to create different paths
       predefinedWaypoints = this.adjustWaypointsForMode(predefinedWaypoints, mode, start, end);

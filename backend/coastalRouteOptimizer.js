@@ -7,13 +7,193 @@
 
 const Grid = require('./models/Grid');
 const HierarchicalRouter = require('./hierarchicalRouter');
+const { 
+  shouldUseCorridor, 
+  getCorridorWaypoints, 
+  getPortApproachWaypoints 
+} = require('./utils/coastalCorridors');
 
 class CoastalRouteOptimizer {
   constructor() {
     // Strategic waypoints for different regional corridors
     this.STRATEGIC_WAYPOINTS = {
       
-      // 1. MUMBAI TO EAST COAST (Around Southern India) - ENHANCED GRANULARITY
+      // 1. MUMBAI TO VISAKHAPATNAM - FUEL MODE (SHORTEST, minimal waypoints)
+      // ⛽ Shortest distance, direct crossing, minimal detours
+      // NOTE: End waypoint is in open water, hierarchical router will handle port approach
+      MUMBAI_TO_VISAKHAPATNAM_FUEL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.00, lon: 72.00, name: 'Mumbai Escape - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 75.00, name: 'Bay Southwest - Deep', type: 'open_water' },
+        { lat: 14.00, lon: 78.60, name: 'Bay Central - Deep', type: 'open_water' },
+        { lat: 12.60, lon: 81.80, name: 'Bay Southeast - Deep', type: 'open_water' },
+        { lat: 15.40, lon: 83.20, name: 'Visakhapatnam Approach - Open Water', type: 'open_water' },
+        { lat: 17.40, lon: 83.20, name: 'Visakhapatnam Offshore - Open Water', type: 'open_water' },
+        { lat: 17.68, lon: 83.30, name: 'Visakhapatnam Port', type: 'port' }
+      ],
+      
+      // 1B. MUMBAI TO VISAKHAPATNAM - OPTIMAL MODE (BALANCED, medium waypoints)
+      // ⚖️ Balanced distance and safety, smooth path
+      // NOTE: End waypoint is in open water, hierarchical router will handle port approach
+      MUMBAI_TO_VISAKHAPATNAM_OPTIMAL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.20, lon: 72.20, name: 'Mumbai Escape - Open Water', type: 'open_water' },
+        { lat: 16.40, lon: 74.40, name: 'Arabian Sea - Open Water', type: 'open_water' },
+        { lat: 15.00, lon: 76.60, name: 'Bay Entry - Open Water', type: 'open_water' },
+        { lat: 13.60, lon: 79.00, name: 'Bay Central - Open Water', type: 'open_water' },
+        { lat: 12.80, lon: 81.40, name: 'Bay Southeast - Open Water', type: 'open_water' },
+        { lat: 14.80, lon: 83.00, name: 'Visakhapatnam Mid Approach - Open Water', type: 'open_water' },
+        { lat: 16.60, lon: 83.20, name: 'Visakhapatnam Nearshore - Open Water', type: 'open_water' },
+        { lat: 17.40, lon: 83.20, name: 'Visakhapatnam Offshore - Open Water', type: 'open_water' },
+        { lat: 17.68, lon: 83.30, name: 'Visakhapatnam Port', type: 'port' }
+      ],
+      
+      // 1C. MUMBAI TO VISAKHAPATNAM - SAFE MODE (LONGEST, maximum waypoints, furthest from coast)
+      // 🛡️ Prioritizes safety with wider coastal margins and deeper water routes
+      // NOTE: End waypoint is in open water, hierarchical router will handle port approach
+      MUMBAI_TO_VISAKHAPATNAM_SAFE: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 17.60, lon: 71.40, name: 'Mumbai Safe Escape - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 71.00, name: 'Arabian Sea Deep South - Open Water', type: 'open_water' },
+        { lat: 14.40, lon: 72.40, name: 'Arabian Sea Deep - Open Water', type: 'open_water' },
+        { lat: 12.80, lon: 74.80, name: 'Arabian Sea Wide Arc - Open Water', type: 'open_water' },
+        { lat: 11.20, lon: 78.00, name: 'Bay Entry Safe - Open Water', type: 'open_water' },
+        { lat: 9.80, lon: 81.00, name: 'Bay Central Deep - Open Water', type: 'open_water' },
+        { lat: 11.20, lon: 84.20, name: 'Bay Southeast Deep - Open Water', type: 'open_water' },
+        { lat: 13.40, lon: 85.80, name: 'Bay Northeast Deep - Open Water', type: 'open_water' },
+        { lat: 15.20, lon: 86.40, name: 'Bay Far Northeast Deep - Open Water', type: 'open_water' },
+        { lat: 16.60, lon: 85.60, name: 'Visakhapatnam Outer Safe Lane - Open Water', type: 'open_water' },
+        { lat: 17.20, lon: 84.40, name: 'Visakhapatnam Safe Approach - Open Water', type: 'open_water' },
+        { lat: 17.40, lon: 83.20, name: 'Visakhapatnam Offshore - Open Water', type: 'open_water' },
+        { lat: 17.68, lon: 83.30, name: 'Visakhapatnam Port', type: 'port' }
+      ],
+
+      // 1D. MUMBAI TO PARADIP (Odisha) - Mode variants
+      MUMBAI_TO_PARADIP_FUEL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.00, lon: 72.00, name: 'Mumbai Escape - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 75.00, name: 'Central Arabian Sea', type: 'open_water' },
+        { lat: 14.00, lon: 78.50, name: 'Bay Transition', type: 'open_water' },
+        { lat: 14.50, lon: 82.50, name: 'Bay Midpoint', type: 'open_water' },
+        { lat: 16.80, lon: 85.00, name: 'Bay North Central', type: 'open_water' },
+        { lat: 19.20, lon: 86.60, name: 'Paradip Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_PARADIP_OPTIMAL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.20, lon: 72.20, name: 'Mumbai Offshore - Open Water', type: 'open_water' },
+        { lat: 16.50, lon: 74.50, name: 'Arabian Sea - Open Water', type: 'open_water' },
+        { lat: 15.00, lon: 76.80, name: 'Bay Entry - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 79.80, name: 'Bay Central - Open Water', type: 'open_water' },
+        { lat: 14.50, lon: 82.80, name: 'Bay Northeast - Open Water', type: 'open_water' },
+        { lat: 16.80, lon: 85.20, name: 'Bay North Central - Open Water', type: 'open_water' },
+        { lat: 19.40, lon: 86.90, name: 'Paradip Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_PARADIP_SAFE: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 17.50, lon: 71.50, name: 'Mumbai Safe Escape - Open Water', type: 'open_water' },
+        { lat: 15.50, lon: 71.50, name: 'Arabian Deep West - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 73.50, name: 'Arabian Deep Central - Open Water', type: 'open_water' },
+        { lat: 11.50, lon: 77.50, name: 'Bay Safe Entry - Open Water', type: 'open_water' },
+        { lat: 10.00, lon: 81.00, name: 'Bay Deep South - Open Water', type: 'open_water' },
+        { lat: 11.80, lon: 84.50, name: 'Bay Central Deep - Open Water', type: 'open_water' },
+        { lat: 14.50, lon: 86.00, name: 'Bay Northeast Deep - Open Water', type: 'open_water' },
+        { lat: 17.50, lon: 87.00, name: 'Bay North Deep - Open Water', type: 'open_water' },
+        { lat: 19.60, lon: 87.20, name: 'Paradip Offshore - Open Water', type: 'open_water' }
+      ],
+
+      // 1E. MUMBAI TO HALDIA/KOLKATA (West Bengal) - Mode variants
+      MUMBAI_TO_HALDIA_FUEL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.00, lon: 72.00, name: 'Mumbai Escape - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 75.00, name: 'Central Arabian Sea', type: 'open_water' },
+        { lat: 14.00, lon: 78.80, name: 'Bay Transition', type: 'open_water' },
+        { lat: 13.80, lon: 83.00, name: 'Bay Central', type: 'open_water' },
+        { lat: 15.80, lon: 86.20, name: 'Bay Northeast Corridor', type: 'open_water' },
+        { lat: 18.80, lon: 88.30, name: 'Bay North Corridor', type: 'open_water' },
+        { lat: 21.30, lon: 89.40, name: 'Haldia Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_HALDIA_OPTIMAL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.20, lon: 72.20, name: 'Mumbai Offshore - Open Water', type: 'open_water' },
+        { lat: 16.50, lon: 74.80, name: 'Arabian Sea - Open Water', type: 'open_water' },
+        { lat: 15.20, lon: 77.00, name: 'Bay Entry - Open Water', type: 'open_water' },
+        { lat: 13.80, lon: 80.00, name: 'Bay Central - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 83.50, name: 'Bay Midpoint - Open Water', type: 'open_water' },
+        { lat: 15.50, lon: 86.50, name: 'Bay Northeast - Open Water', type: 'open_water' },
+        { lat: 18.50, lon: 88.50, name: 'Bay Far Northeast - Open Water', type: 'open_water' },
+        { lat: 21.50, lon: 89.70, name: 'Haldia Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_HALDIA_SAFE: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 17.50, lon: 71.50, name: 'Mumbai Safe Escape - Open Water', type: 'open_water' },
+        { lat: 15.50, lon: 71.20, name: 'Arabian Deep West - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 73.20, name: 'Arabian Deep Central - Open Water', type: 'open_water' },
+        { lat: 11.50, lon: 76.80, name: 'Bay Safe Entry - Open Water', type: 'open_water' },
+        { lat: 10.00, lon: 80.50, name: 'Bay Deep South - Open Water', type: 'open_water' },
+        { lat: 11.50, lon: 84.50, name: 'Bay Deep Central - Open Water', type: 'open_water' },
+        { lat: 14.00, lon: 87.00, name: 'Bay Deep Northeast - Open Water', type: 'open_water' },
+        { lat: 17.00, lon: 88.50, name: 'Bay Deep Far Northeast - Open Water', type: 'open_water' },
+        { lat: 20.50, lon: 89.80, name: 'Haldia Offshore - Open Water', type: 'open_water' }
+      ],
+
+      // 1F. MUMBAI TO CHITTAGONG (Bangladesh) - Mode variants
+      MUMBAI_TO_CHITTAGONG_FUEL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.00, lon: 72.00, name: 'Mumbai Escape - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 75.20, name: 'Central Arabian Sea', type: 'open_water' },
+        { lat: 14.00, lon: 79.00, name: 'Bay Transition', type: 'open_water' },
+        { lat: 12.50, lon: 83.00, name: 'Bay Mid Corridor', type: 'open_water' },
+        { lat: 13.50, lon: 86.50, name: 'Bay East Corridor', type: 'open_water' },
+        { lat: 16.00, lon: 89.00, name: 'Bay Northeast Corridor', type: 'open_water' },
+        { lat: 19.50, lon: 90.80, name: 'Bay Far Northeast', type: 'open_water' },
+        { lat: 21.50, lon: 91.60, name: 'Chittagong Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_CHITTAGONG_OPTIMAL: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 18.20, lon: 72.20, name: 'Mumbai Offshore - Open Water', type: 'open_water' },
+        { lat: 16.50, lon: 74.80, name: 'Arabian Sea - Open Water', type: 'open_water' },
+        { lat: 15.00, lon: 77.20, name: 'Bay Entry - Open Water', type: 'open_water' },
+        { lat: 13.20, lon: 80.20, name: 'Bay Central - Open Water', type: 'open_water' },
+        { lat: 12.00, lon: 83.80, name: 'Bay East Central - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 87.50, name: 'Bay East Corridor - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 90.00, name: 'Bay Northeast Corridor - Open Water', type: 'open_water' },
+        { lat: 19.50, lon: 91.20, name: 'Bay Far Northeast - Open Water', type: 'open_water' },
+        { lat: 21.70, lon: 91.80, name: 'Chittagong Offshore - Open Water', type: 'open_water' }
+      ],
+
+      MUMBAI_TO_CHITTAGONG_SAFE: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai Port', type: 'port' },
+        { lat: 17.50, lon: 71.50, name: 'Mumbai Safe Escape - Open Water', type: 'open_water' },
+        { lat: 15.50, lon: 71.20, name: 'Arabian Deep West - Open Water', type: 'open_water' },
+        { lat: 13.50, lon: 73.50, name: 'Arabian Deep Central - Open Water', type: 'open_water' },
+        { lat: 11.00, lon: 77.50, name: 'Bay Safe Entry - Open Water', type: 'open_water' },
+        { lat: 9.50, lon: 81.50, name: 'Bay Deep South - Open Water', type: 'open_water' },
+        { lat: 10.50, lon: 85.50, name: 'Bay Deep Central - Open Water', type: 'open_water' },
+        { lat: 13.00, lon: 88.50, name: 'Bay Deep East - Open Water', type: 'open_water' },
+        { lat: 16.00, lon: 90.50, name: 'Bay Deep Northeast - Open Water', type: 'open_water' },
+        { lat: 19.50, lon: 92.00, name: 'Bay Far Northeast Deep - Open Water', type: 'open_water' },
+        { lat: 21.80, lon: 92.10, name: 'Chittagong Offshore - Open Water', type: 'open_water' }
+      ],
+      
+      // 1G. MUMBAI TO VISAKHAPATNAM - DIRECT (fallback, for backward compatibility)
+      MUMBAI_TO_VISAKHAPATNAM_DIRECT: [
+        { lat: 18.97, lon: 72.87, name: 'Mumbai' },
+        { lat: 18.80, lon: 73.20, name: 'Mumbai offshore' },
+        { lat: 18.50, lon: 74.50, name: 'Maharashtra coast' },
+        { lat: 18.20, lon: 76.00, name: 'Open Arabian Sea' },
+        { lat: 18.00, lon: 77.50, name: 'Mid Arabian Sea' },
+        { lat: 17.80, lon: 79.00, name: 'Approaching Bay of Bengal' },
+        { lat: 17.75, lon: 80.50, name: 'Bay of Bengal Entry' },
+        { lat: 17.70, lon: 82.00, name: 'Andhra Coast Approach' },
+        { lat: 17.68, lon: 83.30, name: 'Visakhapatnam' }
+      ],
+      
+      // 1B. MUMBAI TO EAST COAST (Around Southern India) - For Chennai/other ports
       MUMBAI_TO_EAST_COAST: [
         { lat: 18.97, lon: 72.87, name: 'Mumbai' },
         { lat: 18.5, lon: 73.0, name: 'Mumbai offshore' },
@@ -212,16 +392,77 @@ class CoastalRouteOptimizer {
   /**
    * Intelligently select waypoint set based on origin and destination
    */
-  selectWaypointSet(start, end) {
+  selectWaypointSet(start, end, mode = 'optimal') {
     const startRegion = this.getRegion(start.lat, start.lon);
     const endRegion = this.getRegion(end.lat, end.lon);
     
     console.log(`   🗺️  Route regions: ${startRegion} → ${endRegion}`);
+    console.log(`   🎯 Mode: ${mode.toUpperCase()}`);
+    
+    // ========== SPECIAL CASE: MUMBAI ↔ VISAKHAPATNAM (Mode-Aware) ==========
+    
+    const startName = (start.name || '').toLowerCase();
+    const endName = (end.name || '').toLowerCase();
+    const isMumbaiToVizag = (startName.includes('mumbai') && endName.includes('vishakhapatnam'));
+    const isVizagToMumbai = (startName.includes('vishakhapatnam') && endName.includes('mumbai'));
+    
+    if (isMumbaiToVizag || isVizagToMumbai) {
+      // Different waypoint sets based on mode
+      if (mode === 'fuel' || mode === 'fuel_efficient') {
+        console.log(`   ⛽ FUEL MODE: Using SHORTEST direct crossing (fewer waypoints, straight line)`);
+        return { set: 'MUMBAI_TO_VISAKHAPATNAM_FUEL', bidirectional: true, viaHub: null };
+      } else if (mode === 'safe') {
+        console.log(`   🛡️ SAFE MODE: Using WIDER coastal approach (more waypoints, further from coast)`);
+        return { set: 'MUMBAI_TO_VISAKHAPATNAM_SAFE', bidirectional: true, viaHub: null };
+      } else {
+        console.log(`   ⚖️ OPTIMAL MODE: Using BALANCED route (medium waypoints, good balance)`);
+        return { set: 'MUMBAI_TO_VISAKHAPATNAM_OPTIMAL', bidirectional: true, viaHub: null };
+      }
+    }
+
+    // Helper utilities for other southeast ports
+    const matchesAny = (name, keywords) => keywords.some(keyword => name.includes(keyword));
+    const getSoutheastPortKey = (name) => {
+      if (!name) return null;
+      if (matchesAny(name, ['paradip', 'paradeep'])) return 'PARADIP';
+      if (matchesAny(name, ['haldia', 'kolkata', 'kolkatta'])) return 'HALDIA';
+      if (matchesAny(name, ['chittagong', 'chattogram'])) return 'CHITTAGONG';
+      return null;
+    };
+    const selectSoutheastRoute = (portKey) => {
+      const prefix = `MUMBAI_TO_${portKey}`;
+      const modeSuffix = (mode === 'fuel' || mode === 'fuel_efficient') ? 'FUEL' : (mode === 'safe' ? 'SAFE' : 'OPTIMAL');
+      const humanNameMap = {
+        PARADIP: 'Paradip',
+        HALDIA: 'Haldia/Kolkata',
+        CHITTAGONG: 'Chittagong'
+      };
+      const humanName = humanNameMap[portKey] || portKey.toLowerCase();
+      if (modeSuffix === 'FUEL') {
+        console.log(`   ⛽ FUEL MODE: Using direct Bay of Bengal crossing to ${humanName}`);
+      } else if (modeSuffix === 'SAFE') {
+        console.log(`   🛡️ SAFE MODE: Using deep-water corridor to ${humanName}`);
+      } else {
+        console.log(`   ⚖️ OPTIMAL MODE: Using balanced corridor to ${humanName}`);
+      }
+      return { set: `${prefix}_${modeSuffix}`, bidirectional: true, viaHub: null };
+    };
+
+    const startSoutheast = getSoutheastPortKey(startName);
+    const endSoutheast = getSoutheastPortKey(endName);
+
+    if (startRegion === 'WEST_INDIA' && endSoutheast) {
+      return selectSoutheastRoute(endSoutheast);
+    }
+
+    if (endRegion === 'WEST_INDIA' && startSoutheast) {
+      return selectSoutheastRoute(startSoutheast);
+    }
     
     // ========== HUB-BASED ROUTING FOR WEST INDIA ==========
     // Route all West India → Southeast/East destinations via Chennai/Kochi hub
     
-    // West India → East India (via Chennai hub)
+    // West India → East India (includes Mumbai → Chennai)
     if (startRegion === 'WEST_INDIA' && endRegion === 'EAST_INDIA') {
       console.log(`   🔄 Using hub routing: West → Chennai → East India`);
       return { set: 'MUMBAI_TO_EAST_COAST', bidirectional: true, viaHub: 'CHENNAI' };
@@ -357,8 +598,13 @@ class CoastalRouteOptimizer {
   /**
    * Get strategic waypoints for the route
    */
-  getStrategicWaypoints(start, end) {
-    const waypointInfo = this.selectWaypointSet(start, end);
+  getStrategicWaypoints(start, end, mode = 'optimal') {
+    // NOTE: DO NOT use coastalCorridors.js for Mumbai-Visakhapatnam
+    // The corridors in coastalCorridors.js are designed for Chennai-based routes
+    // Mumbai-Visakhapatnam uses STRATEGIC_WAYPOINTS defined above
+    
+    // FALLBACK: Use existing waypoint logic
+    const waypointInfo = this.selectWaypointSet(start, end, mode);
     
     if (!waypointInfo) {
       console.log(`   ⚠️  No predefined waypoints, using direct route`);
@@ -388,7 +634,7 @@ class CoastalRouteOptimizer {
       }
     }
     
-    console.log(`   📍 Using waypoint set: ${waypointInfo.set} (${waypoints.length} points)`);
+    console.log(`   📍 Using waypoint set: ${waypointInfo.set} (${waypoints.length} points) for ${mode.toUpperCase()} mode`);
     
     return waypoints;
   }

@@ -205,6 +205,7 @@ class RouteFinder {
   /**
    * Find grid cell with fallback to nearest water cell
    * Used for start/end points that might be on land or near coast
+   * ENHANCED: Prioritizes open water, snaps endpoints to navigable cells
    */
   findGridCellWithFallback(gridData, lat, lon, resolution = 1) {
     // First try exact match
@@ -212,36 +213,63 @@ class RouteFinder {
     
     // If found and it's water, return it
     if (cell && !cell.is_land && !cell.obstacle) {
+      console.log(`   ✅ Found at exact coordinates (${lat.toFixed(4)}, ${lon.toFixed(4)})`);
       return cell;
     }
     
-    // If not found or it's land, search for nearest water cell within 1 degree
-    console.log(`   🔍 Searching for nearest water cell to (${lat.toFixed(4)}, ${lon.toFixed(4)})`);
+    // SNAP TO NEAREST WATER: Search in expanding circles for ports near land
+    console.log(`   🔍 Snapping to nearest water cell from (${lat.toFixed(4)}, ${lon.toFixed(4)})`);
     
-    let nearestWaterCell = null;
-    let minDistance = Infinity;
-    const searchRadius = 1.0; // Search within 1 degree (~111km)
+    // Try multiple search radii: 0.5, 1.0, 1.5, 2.0, 3.0 degrees
+    const searchRadii = [0.5, 1.0, 1.5, 2.0, 3.0];
+    let fallbackCoastal = null;
+    let fallbackCoastalDistance = Infinity;
     
-    for (const candidate of gridData) {
-      if (candidate.is_land || candidate.obstacle) continue;
+    for (const searchRadius of searchRadii) {
+      let nearestOpenWater = null;
+      let minOpenDistance = Infinity;
       
-      const distance = Math.sqrt(
-        Math.pow(candidate.lat - lat, 2) + 
-        Math.pow(candidate.lon - lon, 2)
-      );
-      
-      if (distance <= searchRadius && distance < minDistance) {
-        minDistance = distance;
-        nearestWaterCell = candidate;
+      for (const candidate of gridData) {
+        if (candidate.is_land || candidate.obstacle) continue;
+        
+        // Calculate actual distance using Haversine for accuracy
+        const distance = this.haversineDistance(lat, lon, candidate.lat, candidate.lon) / 111; // Convert km to degrees
+        
+        if (distance > searchRadius) continue;
+        
+        // PRIORITY 1: Cells marked as open_water zone
+        // PRIORITY 2: Cells far from coast (>0.3° = ~33km)
+        const isOpenWater = candidate.zone === 'open_water' || 
+                           candidate.open_water === true ||
+                           (!candidate.zone && distance > 0.3);
+        
+        if (isOpenWater && distance < minOpenDistance) {
+          minOpenDistance = distance;
+          nearestOpenWater = candidate;
+        } else if (!isOpenWater && distance < fallbackCoastalDistance) {
+          fallbackCoastalDistance = distance;
+          fallbackCoastal = candidate;
+        }
       }
+      
+      // Return open water immediately if found
+      if (nearestOpenWater) {
+        const distanceKm = minOpenDistance * 111;
+        console.log(`   ✅ Snapped to 🌊 open water ${distanceKm.toFixed(1)}km away at (${nearestOpenWater.lat.toFixed(4)}, ${nearestOpenWater.lon.toFixed(4)})`);
+        return nearestOpenWater;
+      }
+      
+      console.log(`   ⚠️  No open water within ${searchRadius * 111}km, expanding...`);
     }
     
-    if (nearestWaterCell) {
-      const distanceKm = minDistance * 111; // Convert degrees to km
-      console.log(`   ✅ Found water cell ${distanceKm.toFixed(2)}km away at (${nearestWaterCell.lat.toFixed(4)}, ${nearestWaterCell.lon.toFixed(4)})`);
-      return nearestWaterCell;
+    // Fallback to coastal water if no open water found
+    if (fallbackCoastal) {
+      const distanceKm = fallbackCoastalDistance * 111;
+      console.log(`   ⚠️  Falling back to 🏖️ coastal water ${distanceKm.toFixed(1)}km away at (${fallbackCoastal.lat.toFixed(4)}, ${fallbackCoastal.lon.toFixed(4)})`);
+      return fallbackCoastal;
     }
     
+    console.log(`   ❌ No valid water cell found within ${searchRadii[searchRadii.length - 1] * 111}km`);
     return null;
   }
 
